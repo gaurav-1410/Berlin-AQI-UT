@@ -1,0 +1,2381 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='berlin_air_quality_weather' inline='true' name='federated.1bj7hks1xdgq6z1e7441g1dhcoiz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='berlin_air_quality_weather' name='textscan.1roqgdm1tn5va511okn5813sgih5'>
+            <connection class='textscan' directory='D:/Urban Tech' filename='berlin_air_quality_weather.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1roqgdm1tn5va511okn5813sgih5' name='berlin_air_quality_weather.csv' table='[berlin_air_quality_weather#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='date' ordinal='0' />
+            <column datatype='real' name='latitude' ordinal='1' />
+            <column datatype='real' name='longitude' ordinal='2' />
+            <column datatype='real' name='european_aqi' ordinal='3' />
+            <column datatype='real' name='european_aqi_pm2_5' ordinal='4' />
+            <column datatype='real' name='european_aqi_pm10' ordinal='5' />
+            <column datatype='real' name='pm10' ordinal='6' />
+            <column datatype='real' name='pm2_5' ordinal='7' />
+            <column datatype='real' name='carbon_monoxide' ordinal='8' />
+            <column datatype='string' name='carbon_dioxide' ordinal='9' />
+            <column datatype='real' name='nitrogen_dioxide' ordinal='10' />
+            <column datatype='real' name='sulphur_dioxide' ordinal='11' />
+            <column datatype='real' name='ozone' ordinal='12' />
+            <column datatype='real' name='temperature_2m' ordinal='13' />
+            <column datatype='real' name='relative_humidity_2m' ordinal='14' />
+            <column datatype='real' name='dewpoint_2m' ordinal='15' />
+            <column datatype='real' name='wind_speed_10m' ordinal='16' />
+            <column datatype='real' name='wind_direction_10m' ordinal='17' />
+            <column datatype='real' name='wind_gusts_10m' ordinal='18' />
+            <column datatype='real' name='precipitation' ordinal='19' />
+            <column datatype='real' name='rain' ordinal='20' />
+            <column datatype='real' name='snowfall' ordinal='21' />
+            <column datatype='real' name='surface_pressure' ordinal='22' />
+            <column datatype='real' name='cloud_cover' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>european_aqi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[european_aqi]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>european_aqi</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>european_aqi_pm2_5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[european_aqi_pm2_5]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>european_aqi_pm2_5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>european_aqi_pm10</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[european_aqi_pm10]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>european_aqi_pm10</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pm10</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pm10]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>pm10</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pm2_5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pm2_5]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>pm2_5</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>carbon_monoxide</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[carbon_monoxide]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>carbon_monoxide</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>carbon_dioxide</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[carbon_dioxide]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>carbon_dioxide</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nitrogen_dioxide</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[nitrogen_dioxide]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>nitrogen_dioxide</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sulphur_dioxide</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sulphur_dioxide]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>sulphur_dioxide</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ozone</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ozone]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>ozone</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temperature_2m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temperature_2m]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>temperature_2m</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>relative_humidity_2m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[relative_humidity_2m]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>relative_humidity_2m</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dewpoint_2m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dewpoint_2m]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>dewpoint_2m</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wind_speed_10m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wind_speed_10m]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>wind_speed_10m</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wind_direction_10m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wind_direction_10m]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>wind_direction_10m</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wind_gusts_10m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wind_gusts_10m]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>wind_gusts_10m</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>precipitation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[precipitation]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>precipitation</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rain</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rain]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>rain</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>snowfall</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[snowfall]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>snowfall</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>surface_pressure</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[surface_pressure]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>surface_pressure</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cloud_cover</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cloud_cover]</local-name>
+            <parent-name>[berlin_air_quality_weather.csv]</parent-name>
+            <remote-alias>cloud_cover</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Dates' datatype='date' name='[Calculation_847802642160041984]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE([date])' />
+      </column>
+      <column caption='berlin_air_quality_weather.csv' datatype='table' name='[__tableau_internal_object_id__].[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]' role='measure' type='quantitative' />
+      <column caption='Carbon Dioxide' datatype='string' name='[carbon_dioxide]' role='dimension' type='nominal' />
+      <column caption='Carbon Monoxide' datatype='real' name='[carbon_monoxide]' role='measure' type='quantitative' />
+      <column caption='Cloud Cover' datatype='real' name='[cloud_cover]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='string' name='[date]' role='dimension' type='nominal' />
+      <column caption='Dewpoint 2M' datatype='real' name='[dewpoint_2m]' role='measure' type='quantitative' />
+      <column caption='European Aqi' datatype='real' name='[european_aqi]' role='measure' type='quantitative' />
+      <column caption='European Aqi Pm10' datatype='real' name='[european_aqi_pm10]' role='measure' type='quantitative' />
+      <column caption='European Aqi Pm2 5' datatype='real' name='[european_aqi_pm2_5]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Nitrogen Dioxide' datatype='real' name='[nitrogen_dioxide]' role='measure' type='quantitative' />
+      <column caption='Ozone' datatype='real' name='[ozone]' role='measure' type='quantitative' />
+      <column caption='Pm10' datatype='real' name='[pm10]' role='measure' type='quantitative' />
+      <column caption='Pm2 5' datatype='real' name='[pm2_5]' role='measure' type='quantitative' />
+      <column caption='Precipitation' datatype='real' name='[precipitation]' role='measure' type='quantitative' />
+      <column caption='Rain' datatype='real' name='[rain]' role='measure' type='quantitative' />
+      <column caption='Relative Humidity 2M' datatype='real' name='[relative_humidity_2m]' role='measure' type='quantitative' />
+      <column caption='Snowfall' datatype='real' name='[snowfall]' role='measure' type='quantitative' />
+      <column caption='Sulphur Dioxide' datatype='real' name='[sulphur_dioxide]' role='measure' type='quantitative' />
+      <column caption='Surface Pressure' datatype='real' name='[surface_pressure]' role='measure' type='quantitative' />
+      <column caption='Temperature 2M' datatype='real' name='[temperature_2m]' role='measure' type='quantitative' />
+      <column caption='Wind Direction 10M' datatype='real' name='[wind_direction_10m]' role='measure' type='quantitative' />
+      <column caption='Wind Gusts 10M' datatype='real' name='[wind_gusts_10m]' role='measure' type='quantitative' />
+      <column caption='Wind Speed 10M' datatype='real' name='[wind_speed_10m]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Gaurav/AppData/Local/Temp/TableauTemp/#TableauTemp_09hj5be0caoai51elxi4406343aj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/01/2025 06:47:32 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>61626</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>1</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>2</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>european_aqi</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[european_aqi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>european_aqi</remote-alias>
+              <ordinal>3</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6078</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>european_aqi_pm2_5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[european_aqi_pm2_5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>european_aqi_pm2_5</remote-alias>
+              <ordinal>4</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27866</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>european_aqi_pm10</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[european_aqi_pm10]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>european_aqi_pm10</remote-alias>
+              <ordinal>5</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34003</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pm10</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pm10]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pm10</remote-alias>
+              <ordinal>6</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1122</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pm2_5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pm2_5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pm2_5</remote-alias>
+              <ordinal>7</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>940</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>carbon_monoxide</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[carbon_monoxide]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>carbon_monoxide</remote-alias>
+              <ordinal>8</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>872</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>carbon_dioxide</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[carbon_dioxide]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>carbon_dioxide</remote-alias>
+              <ordinal>9</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>360</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nitrogen_dioxide</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[nitrogen_dioxide]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nitrogen_dioxide</remote-alias>
+              <ordinal>10</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1617</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sulphur_dioxide</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sulphur_dioxide]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sulphur_dioxide</remote-alias>
+              <ordinal>11</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>156</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ozone</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ozone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ozone</remote-alias>
+              <ordinal>12</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>327</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>temperature_2m</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[temperature_2m]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>temperature_2m</remote-alias>
+              <ordinal>13</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27591</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>relative_humidity_2m</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[relative_humidity_2m]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>relative_humidity_2m</remote-alias>
+              <ordinal>14</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>192960</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dewpoint_2m</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dewpoint_2m]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dewpoint_2m</remote-alias>
+              <ordinal>15</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21553</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wind_speed_10m</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[wind_speed_10m]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wind_speed_10m</remote-alias>
+              <ordinal>16</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16195</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wind_direction_10m</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[wind_direction_10m]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wind_direction_10m</remote-alias>
+              <ordinal>17</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23570</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wind_gusts_10m</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[wind_gusts_10m]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wind_gusts_10m</remote-alias>
+              <ordinal>18</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>464</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>precipitation</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[precipitation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>precipitation</remote-alias>
+              <ordinal>19</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>82</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rain</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rain]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rain</remote-alias>
+              <ordinal>20</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>snowfall</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[snowfall]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>snowfall</remote-alias>
+              <ordinal>21</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>surface_pressure</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[surface_pressure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>surface_pressure</remote-alias>
+              <ordinal>22</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>182578</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cloud_cover</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[cloud_cover]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cloud_cover</remote-alias>
+              <ordinal>23</ordinal>
+              <family>berlin_air_quality_weather.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>237</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='berlin_air_quality_weather.csv' id='berlin_air_quality_weather.csv_93F6AF687D7A4AF59E165B8AAC6901A5'>
+            <properties context=''>
+              <relation connection='textscan.1roqgdm1tn5va511okn5813sgih5' name='berlin_air_quality_weather.csv' table='[berlin_air_quality_weather#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='date' ordinal='0' />
+                  <column datatype='real' name='latitude' ordinal='1' />
+                  <column datatype='real' name='longitude' ordinal='2' />
+                  <column datatype='real' name='european_aqi' ordinal='3' />
+                  <column datatype='real' name='european_aqi_pm2_5' ordinal='4' />
+                  <column datatype='real' name='european_aqi_pm10' ordinal='5' />
+                  <column datatype='real' name='pm10' ordinal='6' />
+                  <column datatype='real' name='pm2_5' ordinal='7' />
+                  <column datatype='real' name='carbon_monoxide' ordinal='8' />
+                  <column datatype='string' name='carbon_dioxide' ordinal='9' />
+                  <column datatype='real' name='nitrogen_dioxide' ordinal='10' />
+                  <column datatype='real' name='sulphur_dioxide' ordinal='11' />
+                  <column datatype='real' name='ozone' ordinal='12' />
+                  <column datatype='real' name='temperature_2m' ordinal='13' />
+                  <column datatype='real' name='relative_humidity_2m' ordinal='14' />
+                  <column datatype='real' name='dewpoint_2m' ordinal='15' />
+                  <column datatype='real' name='wind_speed_10m' ordinal='16' />
+                  <column datatype='real' name='wind_direction_10m' ordinal='17' />
+                  <column datatype='real' name='wind_gusts_10m' ordinal='18' />
+                  <column datatype='real' name='precipitation' ordinal='19' />
+                  <column datatype='real' name='rain' ordinal='20' />
+                  <column datatype='real' name='snowfall' ordinal='21' />
+                  <column datatype='real' name='surface_pressure' ordinal='22' />
+                  <column datatype='real' name='cloud_cover' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Berlin AQI Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='berlin_air_quality_weather' name='federated.1bj7hks1xdgq6z1e7441g1dhcoiz' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1bj7hks1xdgq6z1e7441g1dhcoiz'>
+            <column caption='Dates' datatype='date' name='[Calculation_847802642160041984]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE([date])' />
+            </column>
+            <column-instance column='[european_aqi]' derivation='Avg' name='[avg:european_aqi:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='string' name='[date]' role='dimension' type='nominal' />
+            <column caption='European Aqi' datatype='real' name='[european_aqi]' role='measure' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[Calculation_847802642160041984]' derivation='Month' name='[mn:Calculation_847802642160041984:ok]' pivot='key' type='ordinal' />
+            <column caption='Nitrogen Dioxide' datatype='real' name='[nitrogen_dioxide]' role='measure' type='quantitative' />
+            <column-instance column='[latitude]' derivation='None' name='[none:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='None' name='[none:longitude:qk]' pivot='key' type='quantitative' />
+            <column caption='Ozone' datatype='real' name='[ozone]' role='measure' type='quantitative' />
+            <column caption='Pm10' datatype='real' name='[pm10]' role='measure' type='quantitative' />
+            <column caption='Pm2 5' datatype='real' name='[pm2_5]' role='measure' type='quantitative' />
+            <column-instance column='[european_aqi]' derivation='Sum' name='[sum:european_aqi:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[nitrogen_dioxide]' derivation='Sum' name='[sum:nitrogen_dioxide:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ozone]' derivation='Sum' name='[sum:ozone:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pm10]' derivation='Sum' name='[sum:pm10:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pm2_5]' derivation='Sum' name='[sum:pm2_5:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_847802642160041984]' derivation='Year' name='[yr:Calculation_847802642160041984:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[mn:Calculation_847802642160041984:ok]'>
+            <groupfilter function='level-members' level='[mn:Calculation_847802642160041984:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[yr:Calculation_847802642160041984:ok]'>
+            <groupfilter function='level-members' level='[yr:Calculation_847802642160041984:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[mn:Calculation_847802642160041984:ok]</column>
+            <column>[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[yr:Calculation_847802642160041984:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[none:longitude:qk]' field-type='quantitative' max='1545080.2904054166' min='1450859.9213411286' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[none:latitude:qk]' field-type='quantitative' max='6919228.2637128253' min='6868712.0653955145' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[sum:european_aqi:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ff0000</color>
+                <color>#f82929</color>
+                <color>#f25050</color>
+                <color>#ec7676</color>
+                <color>#e59999</color>
+                <color>#dfbaba</color>
+                <color>#d9d9d9</color>
+                <color>#c0cfbe</color>
+                <color>#a8c6a4</color>
+                <color>#92bd8c</color>
+                <color>#7eb376</color>
+                <color>#6aaa62</color>
+                <color>#59a14f</color>
+              </color-palette>
+            </encoding>
+            <encoding attr='color' field='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[avg:european_aqi:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ff0000</color>
+                <color>#f82929</color>
+                <color>#f25050</color>
+                <color>#ec7676</color>
+                <color>#e59999</color>
+                <color>#dfbaba</color>
+                <color>#d9d9d9</color>
+                <color>#c0cfbe</color>
+                <color>#a8c6a4</color>
+                <color>#92bd8c</color>
+                <color>#7eb376</color>
+                <color>#6aaa62</color>
+                <color>#59a14f</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[avg:european_aqi:qk]' />
+              <tooltip column='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[sum:european_aqi:qk]' />
+              <tooltip column='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[sum:pm2_5:qk]' />
+              <tooltip column='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[sum:pm10:qk]' />
+              <tooltip column='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[sum:nitrogen_dioxide:qk]' />
+              <tooltip column='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[sum:ozone:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[none:latitude:qk]</rows>
+        <cols>[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[none:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{51EB60B9-674E-4404-8EE5-015DE0E13E8B}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='berlin_air_quality_weather' name='federated.1bj7hks1xdgq6z1e7441g1dhcoiz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bj7hks1xdgq6z1e7441g1dhcoiz'>
+            <column caption='Dates' datatype='date' name='[Calculation_847802642160041984]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE([date])' />
+            </column>
+            <column-instance column='[european_aqi]' derivation='Avg' name='[avg:european_aqi:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='string' name='[date]' role='dimension' type='nominal' />
+            <column caption='European Aqi' datatype='real' name='[european_aqi]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_847802642160041984]' derivation='None' name='[none:Calculation_847802642160041984:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_847802642160041984]' derivation='None' name='[none:Calculation_847802642160041984:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[none:Calculation_847802642160041984:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2023-12-31#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-01-31#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-02-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-03-31#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-04-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-05-31#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-06-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-07-31#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-08-31#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-09-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-10-31#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-11-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2024-12-31#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-01-31#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-02-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-03-31#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-04-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-05-31#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-06-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-07-31#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-08-31#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-09-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-01#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-02#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-03#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-04#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-05#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-06#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-07#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-08#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-09#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-10#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-11#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-12#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-13#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-14#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-15#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-16#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-17#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-18#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-19#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-20#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-21#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-22#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-23#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-24#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-25#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-26#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-27#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-28#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-29#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-30#' />
+              <groupfilter function='member' level='[none:Calculation_847802642160041984:ok]' member='#2025-10-31#' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[none:Calculation_847802642160041984:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[avg:european_aqi:qk]</rows>
+        <cols>[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[none:Calculation_847802642160041984:qk]</cols>
+      </table>
+      <simple-id uuid='{282CE59D-32B0-4155-90A2-41CA5F62DC65}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Berlin AQI Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[yr:Calculation_847802642160041984:ok]' show-apply='true' type='filter' />
+            <card mode='checkdropdown' param='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[mn:Calculation_847802642160041984:ok]' show-apply='true' type='filter' />
+            <card pane-specification-id='0' param='[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[avg:european_aqi:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[avg:european_aqi:qk]</field>
+            <field>[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[my:Calculation_847802642160041984:ok]</field>
+            <field>[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[none:date:nk]</field>
+            <field>[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[none:latitude:qk]</field>
+            <field>[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[none:longitude:qk]</field>
+            <field>[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[yr:Calculation_847802642160041984:ok]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{1112D5E2-4B34-4F3D-93AB-CCA1B0F31E54}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bj7hks1xdgq6z1e7441g1dhcoiz].[yr:Calculation_847802642160041984:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C550744A-3BB9-4A5C-91CC-30447D961A01}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Berlin AQI Map' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      VwhujFYAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
