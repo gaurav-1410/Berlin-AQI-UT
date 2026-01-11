@@ -27,3 +27,9 @@ This project analyzes 3 years of hourly air quality and weather data (2023-2025)
 - **Air Quality**: [Open-Meteo Air Quality API](https://open-meteo.com/en/docs/air-quality-api)
 - **Weather**: [Open-Meteo Archive API](https://open-meteo.com/en/docs/archive-api)
 - **Geospatial**: Berlin district boundaries (GeoJSON format)
+
+## To open Tableau Visual
+
+- Download the CSV and TWBX file given in Tableau Analysis folder and keep both the file (.CSV and .TWBX) file in the same folder.
+- Open AQI_Dashboard.twbx on data source tab hover mouse under connection (right click and select edit connection) and select the csv file that you have kept in same folder.
+- Done (You can view the visuals).
